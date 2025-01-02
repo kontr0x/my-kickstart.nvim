@@ -21,7 +21,7 @@ return {
 
       -- This function imitates the behavior of Joplin when rendering notes
       local splitToggle_state = 0
-      vim.keymap.set('n', '<C-ö>', function()
+      vim.keymap.set('n', '<a-l>', function()
         if splitToggle_state == 0 then
           vim.cmd 'Markview enableAll'
           splitToggle_state = 1
